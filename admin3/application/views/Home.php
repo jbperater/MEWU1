@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->library('session');
 $user_detail = $this->session->userdata('user_data_session');
-$level = $user_detail['level'];
+$type = $user_detail['type'];
 ?>
 <div id="wrapper">
 	<div id="page-wrapper"> 
@@ -17,7 +17,7 @@ $level = $user_detail['level'];
 					</ol>
 				</div>
 				<div class="col-lg-6">
-					<h4>Welcome to the System, <i><?php echo $level; ?></i>.</h4>
+					<h4>Welcome to the System, <i><?php echo $type; ?></i>.</h4>
 					<p>Hope you joy the day. Have fun</p>
 				</div>
 			</div>
