@@ -9,7 +9,7 @@ class Login extends CI_Controller {
 		parent::__construct(); 
 		$this->load->helper(array('form', 'url'));
         $this->load->library('form_validation');
-		//$this->load->library('session');
+		$this->load->library('session');
 		$this->load->model('Login_auth_db');
 		$this->load->library('session');
 
